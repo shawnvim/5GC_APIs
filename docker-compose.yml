@@ -4,9 +4,9 @@ swagger-ui:
   ports:
     - "8081:8080"
   volumes:
-    - ./*.yml:/swagger_data
+    - ./*.yaml:/swagger_data
   environment:
-    SWAGGER_JSON: swagger_data/*.yml
+    SWAGGER_JSON: swagger_data/*.yaml
 
 swagger-editor:
   image: swaggerapi/swagger-editor
